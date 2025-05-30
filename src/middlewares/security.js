@@ -6,6 +6,8 @@ export const corsOptions = {
   origin: [
     'http://localhost:3000', // frontend dev
     'http://localhost:4200',
+    'https://cloud-idea-generator.netlify.app/', // Netlify production
+
     // Add your production frontend URL(s) here
   ],
   methods: ['GET', 'POST'],
