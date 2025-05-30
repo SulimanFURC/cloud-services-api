@@ -31,7 +31,6 @@ class ProjectIdeasController {
             let ideas;
             if (provider && provider.toLowerCase() === 'gemini') {
                 // Gemini API implementation
-                console.log("Gemini: ", process.env.GEMINI_API_KEY);
                 const geminiApiKey = process.env.GEMINI_API_KEY;
                 if (!geminiApiKey) {
                     return res.status(500).json({ message: 'Gemini API key not configured.' });
